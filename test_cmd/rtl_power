@@ -1,0 +1,4 @@
+#!/bin/bash
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+for last; do true; done
+cp $parent_path/../test_files/rs41_test.power.csv $last

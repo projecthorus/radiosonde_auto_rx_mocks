@@ -1,0 +1,11 @@
+#!/bin/bash
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+cd "$parent_path"
+if [[ "$@" == *"22k"* ]] # scan
+then
+    cat ../test_files/rs41_test.detect.bin
+else
+    # decode
+    cat ../test_files/rs41_test.decode.bin
+fi
+sleep 1
